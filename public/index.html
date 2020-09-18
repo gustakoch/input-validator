@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Política de Cookies</title>
+	</head>
+	<body>
+
+    <form action="login.php" class="input-validator">
+      <div class="input-group">
+        <label for="name">Nome:</label>
+        <input type="text" name="name" id="name" validator-rules="required|min=3">
+      </div>
+
+      <div class="input-group">
+        <label for="email">E-mail:</label>
+        <input type="text" name="email" id="email" validator-rules="required|email">
+      </div>
+
+      <div class="input-group">
+        <label for="password">Senha:</label>
+        <input type="password" name="password" id="password" validator-rules="required|max=6">
+      </div>
+
+      <div class="input-group">
+        <label for="confirmarSenha">Confirmar senha:</label>
+        <input type="password" name="confirm-password" id="confirm-password" validator-rules="required|confirm">
+      </div>
+
+      <div class="input-group">
+        <input type="submit" value="Enviar">
+      </div>
+    </form>
+
+    <script>
+      setTimeout(() => {
+        validator.initiate()
+      }, 1000)
+    </script>
+	</body>
+</html>

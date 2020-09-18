@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, button, input {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:global(form) {
+  max-width: 450px;
+  background-color: #999;
+}
+
+:global(.input-group) {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+:global(.input-group input) {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #CCC;
+  outline: 0;
+}
+
+:global(.error) {
+    font-size: 13px;
+    color: #F00000;
+    margin-top: 5px;
+}
