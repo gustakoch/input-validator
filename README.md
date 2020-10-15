@@ -4,12 +4,20 @@
 
 Cansado de fazer validações manuais em formulários? Input validator chegou para resolver o seu problema de um jeito simples e eficiente.
 
-## Inicializando a biblioteca ##
+## Importando e inicializando a biblioteca ##
 
-Primeiramente, é necessário adicionar o arquivo `input-validator.js` ao seu arquivo .html. O arquivo se encontra dentro da pasta `dist`.
+Primeiramente, é necessário adicionar o arquivo `input-validator.js` ao seu arquivo .html. O arquivo se encontra dentro da pasta `dist`, ou pode ser gerado novamente, basta seguir [esses passos](#gerando-arquivo-input-validator.js). Em seguida, basta inicializar a biblioteca rodando o comando abaixo.
 
+**Importação**
 ~~~html
 <script type="text/javascript" src="input-validator.js"></script>
+~~~
+
+**Inicialização**
+~~~html
+<script type="text/javascript">
+  validator.initiate()
+</script>
 ~~~
 
 ## Funcionamento
@@ -57,3 +65,7 @@ Exemplo abaixo:
 * Instale as dependências rodando o comando **yarn** no terminal;
 * Com as dependências instaladas, rode o comando **yarn build** no terminal.
 * Na pasta dist será gerado o novo arquivo `input-validator.js` minificado. Adicione o arquivo a página html ao qual deseja usar a validação.
+
+## Licença
+
+MIT © [gustakoch](https://github.com/gustakoch)

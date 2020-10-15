@@ -4,10 +4,9 @@
 		<title>Política de Cookies</title>
 	</head>
 	<body>
-
-    <form action="login.php" class="input-validator">
+    <form action="/register" class="input-validator">
       <div class="input-group">
-        <label for="name">Nome:</label>
+        <label for="name">Name:</label>
         <input type="text" name="name" id="name" validator-rules="required|min=3">
       </div>
 
@@ -17,24 +16,23 @@
       </div>
 
       <div class="input-group">
-        <label for="password">Senha:</label>
-        <input type="password" name="password" id="password" validator-rules="required|max=6">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" validator-rules="required|max=8">
       </div>
 
       <div class="input-group">
-        <label for="confirmarSenha">Confirmar senha:</label>
+        <label for="confirm-password">Confirmar senha:</label>
         <input type="password" name="confirm-password" id="confirm-password" validator-rules="required|confirm">
       </div>
 
       <div class="input-group">
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Register">
       </div>
     </form>
 
-    <script>
-      setTimeout(() => {
-        validator.initiate()
-      }, 1000)
+    <script type="text/javascript" src="input-validator.js"></script>
+    <script type="text/javascript">
+      validator.initiate()
     </script>
 	</body>
 </html>
