@@ -8,6 +8,10 @@ Cansado de fazer validações manuais em formulários? Input validator chegou pa
 
 Primeiramente, é necessário adicionar o arquivo `input-validator.js` ao seu arquivo .html. O arquivo se encontra dentro da pasta `dist`.
 
+~~~html
+<script type="text/javascript" src="input-validator.js"></script>
+~~~
+
 ## Funcionamento
 
 Crie um formulário e adicione a classe **input-validator**. Em seguida, adicione o atributo **validator-rules** utilizando algum dos seguintes métodos de validação:
